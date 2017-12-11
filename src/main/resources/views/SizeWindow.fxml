@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Scene?>
+<?import javafx.stage.Stage?>
+<Stage xmlns:fx="http://javafx.com/fxml/1"
+       title="Choose the grid size"
+       fx:controller="pl.grzegorzekkk.carpathfinder.sizechoice.SizeWindowController"
+       resizable="false">
+    <scene>
+        <Scene fx:id="scene">
+            <VBox maxHeight="-Infinity"
+                  maxWidth="-Infinity"
+                  minHeight="-Infinity"
+                  minWidth="-Infinity"
+                  prefHeight="110.0"
+                  prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141">
+                <children>
+                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                            <Button layoutX="129.0" layoutY="75.0" mnemonicParsing="false" text="Next"
+                                    onAction="#buttonAction"/>
+                            <Label layoutX="80.0" layoutY="14.0" text="Please choose the grid size."/>
+                            <ComboBox fx:id="sizesBox" layoutX="75.0" layoutY="43.0" prefWidth="150.0"
+                                      promptText="Pick one..."
+                                      visibleRowCount="3"/>
+                        </children>
+                    </AnchorPane>
+                </children>
+            </VBox>
+        </Scene>
+    </scene>
+</Stage>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns:fx="http://javafx.com/fxml/1"
+       title="Crossings grid"
+       fx:controller="pl.grzegorzekkk.carpathfinder.cityboard.CbwController"
+       resizable="false">
+    <scene>
+        <Scene>
+            <VBox maxHeight="-Infinity"
+                  maxWidth="-Infinity"
+                  minHeight="-Infinity"
+                  minWidth="-Infinity"
+                  prefWidth="600.0"
+                  xmlns="http://javafx.com/javafx/8.0.141"
+                  alignment="CENTER">
+                <children>
+                    <AnchorPane prefHeight="60">
+                        <children>
+                            <Label layoutX="14.0" layoutY="6.0" text="Start point:"/>
+                            <Label layoutX="104.0" layoutY="6.0" text="End point:"/>
+                            <Label layoutX="200.0" layoutY="6.0" text="Locked road possibility:"/>
+                            <Button layoutX="370.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0"
+                                    prefWidth="110.0"
+                                    text="Clear the board" onAction="#onResetButtonClick"/>
+                            <Button layoutX="499.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0"
+                                    prefWidth="84.0"
+                                    text="Start" onAction="#onStartButtonClick"/>
+                            <Label layoutX="35.0" layoutY="26.0" prefHeight="17.0" prefWidth="40.0" fx:id="startCords"/>
+                            <Label layoutX="120.0" layoutY="26.0" prefHeight="17.0" prefWidth="40.0" fx:id="endCords"/>
+                            <Label layoutX="255.0" layoutY="26.0" prefHeight="17.0" prefWidth="28.0"
+                                   fx:id="lockedRoadChance"/>
+                            <Line endX="600.0" fill="BLACK" smooth="false" startY="50.0" endY="50.0"/>
+                        </children>
+                    </AnchorPane>
+                    <VBox alignment="CENTER"
+                          maxHeight="-Infinity"
+                          maxWidth="-Infinity"
+                          minHeight="-Infinity"
+                          minWidth="-Infinity">
+                        <children>
+                            <AnchorPane fx:id="anPane"/>
+                        </children>
+                    </VBox>
+                </children>
+            </VBox>
+        </Scene>
+    </scene>
+</Stage>

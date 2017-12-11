@@ -8,7 +8,7 @@
 <?import javafx.stage.Stage?>
 <Stage xmlns:fx="http://javafx.com/fxml/1"
        title="Choose points"
-       fx:controller="pl.grzegorzekkk.carpathfinder.pointschoice.PointsWindowController"
+       fx:controller="pl.grzegorzekkk.carpathsearch.pointschoice.PointsWindowController"
        resizable="false">
     <scene>
         <Scene fx:id="scene">

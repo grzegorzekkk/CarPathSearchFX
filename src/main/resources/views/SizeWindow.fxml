@@ -9,7 +9,7 @@
 <?import javafx.stage.Stage?>
 <Stage xmlns:fx="http://javafx.com/fxml/1"
        title="Choose the grid size"
-       fx:controller="pl.grzegorzekkk.carpathfinder.sizechoice.SizeWindowController"
+       fx:controller="pl.grzegorzekkk.carpathsearch.sizechoice.SizeWindowController"
        resizable="false">
     <scene>
         <Scene fx:id="scene">

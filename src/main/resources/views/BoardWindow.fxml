@@ -9,7 +9,7 @@
 
 <Stage xmlns:fx="http://javafx.com/fxml/1"
        title="Crossings grid"
-       fx:controller="pl.grzegorzekkk.carpathfinder.cityboard.CbwController"
+       fx:controller="pl.grzegorzekkk.carpathsearch.cityboard.CbwController"
        resizable="false">
     <scene>
         <Scene>
